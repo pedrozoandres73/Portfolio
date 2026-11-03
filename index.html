@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrés Pedrozo | Portfolio técnico</title>
+  <meta name="description" content="Portfolio de Andrés Pedrozo, estudiante de formación técnica en informática, hardware, redes y diseño 3D.">
+  <meta name="theme-color" content="#faf8f6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<!-- Íconos reutilizables (sprite SVG) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="10" y="10" width="4" height="4"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+  <symbol id="i-net" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5 16v-4h14v4"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M4 3h16M6 3v18M18 3v18M4 21h16M6 10h12"/><rect x="10" y="10" width="4" height="3"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13c0-3 5-3 5 0v4"/></symbol>
+  <symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></symbol>
+</svg>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="#inicio" aria-label="Andrés Pedrozo, ir al inicio">
+      <img src="favicon.svg" alt="" width="28" height="28"> Andrés Pedrozo
+    </a>
+    <button class="nav__btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav id="menu" class="nav__menu" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto" class="nav__cta">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ============ INICIO ============ -->
+<section id="inicio" class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__txt">
+      <p class="hero__who">Estudiante de formación técnica · EEST N.º 2 de Lanús</p>
+      <h1>Andrés<br>Pedrozo</h1>
+      <p class="hero__lead">Explorando la tecnología, diseñando soluciones y construyendo conocimiento.</p>
+      <p class="hero__sub">Me oriento a la informática, el hardware, las redes y el diseño 3D, y busco aplicar lo que aprendo en proyectos reales.</p>
+      <div class="btns">
+        <a class="btn btn--main" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#contacto">Contactarme</a>
+      </div>
+    </div>
+
+    <!-- Elemento visual: cubo 3D en wireframe conectado a pistas de circuito -->
+    <svg class="hero__art" viewBox="0 0 480 480" role="img" aria-label="Cubo 3D en estructura de alambre conectado a pistas de un circuito impreso">
+      <g class="traces" fill="none" stroke-width="2">
+        <path pathLength="1" d="M327 240H400V180H450"/>
+        <path pathLength="1" d="M153 240H90V300H40"/>
+        <path pathLength="1" d="M240 140V80H300V30"/>
+        <path pathLength="1" d="M240 340V400H180V450"/>
+        <path pathLength="1" d="M327 190H380V120H430"/>
+        <path pathLength="1" d="M153 290H110V360H60"/>
+      </g>
+      <g class="pads">
+        <circle cx="450" cy="180" r="6"/><circle cx="40" cy="300" r="6"/><circle cx="300" cy="30" r="6"/>
+        <circle cx="180" cy="450" r="6"/><circle cx="430" cy="120" r="6"/><circle cx="60" cy="360" r="6"/>
+      </g>
+      <g class="cube" fill="none" stroke-linejoin="round">
+        <path class="cube__face" d="M240 140L327 190V290L240 340L153 290V190Z"/>
+        <path d="M153 190L240 240L327 190M240 240V340"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ SOBRE MÍ ============ -->
+<section id="sobre-mi" class="sec">
+  <div class="wrap about">
+    <div>
+      <h2>Sobre mí</h2>
+      <p class="about__lead">Estudiante de 7.º año de la Escuela de Educación Secundaria Técnica N.º 2 de Lanús, con formación e interés en informática, hardware, redes informáticas y diseño 3D.</p>
+    </div>
+    <div class="about__txt reveal">
+      <p>A lo largo de mi formación he adquirido conocimientos en mantenimiento y diagnóstico de equipos informáticos, armado y desarmado de computadoras, instalación y configuración de sistemas operativos, identificación de fallas y reconocimiento de componentes de hardware.</p>
+      <p>También cuento con conocimientos en redes informáticas, incluyendo direccionamiento IP, configuración de routers, cableado estructurado y diseño de topologías de red.</p>
+      <p>En diseño y fabricación digital trabajo con Autodesk Fusion 360 para el modelado y diseño 3D, además de manejar impresoras 3D Creality.</p>
+      <p>Complemento mi formación con herramientas de diseño gráfico, recursos digitales y Microsoft Office.</p>
+      <p>Mi objetivo es seguir desarrollándome en el ámbito tecnológico, sumar experiencias y participar en proyectos donde pueda aplicar mis conocimientos y seguir aprendiendo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HABILIDADES ============ -->
+<section id="habilidades" class="sec sec--alt">
+  <div class="wrap">
+    <h2>Habilidades técnicas</h2>
+    <p class="sec__intro">Organizadas por área, sin porcentajes: cada punto es algo que trabajé durante mi formación.</p>
+    <div class="grid skills">
+      <article class="card reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-cpu"/></svg>
+        <h3>Informática y hardware</h3>
+        <ul class="chips">
+          <li>Armado y desarmado de computadoras</li>
+          <li>Mantenimiento preventivo y correctivo</li>
+          <li>Diagnóstico de fallas</li>
+          <li>Reconocimiento de componentes</li>
+          <li>Instalación de sistemas operativos</li>
+          <li>Configuración de Windows</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-net"/></svg>
+        <h3>Redes informáticas</h3>
+        <ul class="chips">
+          <li>Direccionamiento IP</li>
+          <li>Configuración de routers</li>
+          <li>Cableado estructurado</li>
+          <li>Topologías de red</li>
+          <li>Fundamentos de redes</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-cube"/></svg>
+        <h3>Diseño 3D y fabricación digital</h3>
+        <ul class="chips">
+          <li>Autodesk Fusion 360</li>
+          <li>Modelado y diseño 3D</li>
+          <li>Impresoras 3D Creality</li>
+          <li>Procesos de fabricación digital</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-tools"/></svg>
+        <h3>Herramientas digitales</h3>
+        <ul class="chips">
+          <li>Microsoft Office</li>
+          <li>Diseño gráfico</li>
+          <li>Herramientas de productividad</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section id="proyectos" class="sec">
+  <div class="wrap">
+    <h2>Proyectos</h2>
+    <div class="filters" role="group" aria-label="Filtrar proyectos por categoría">
+      <button class="chip is-on" data-filter="all" aria-pressed="true">Todos</button>
+      <button class="chip" data-filter="pc" aria-pressed="false">Mantenimiento de PC</button>
+      <button class="chip" data-filter="modelado" aria-pressed="false">Fusion 360</button>
+      <button class="chip" data-filter="impresion" aria-pressed="false">Impresión 3D</button>
+    </div>
+
+    <div class="grid projects">
+      <!-- COPIÁ Y EDITÁ ESTE BLOQUE para cada proyecto. data-cat define la categoría. -->
+      <article class="card project reveal" data-cat="pc">
+        <div class="project__img project__img--photo"><img src="assets/proyecto-mantenimiento-pc.jpg" width="825" height="1100" loading="lazy" alt="Manos reemplazando un SSD dentro de una laptop abierta, con un destornillador de precisión" style="object-position:center 62%"></div>
+        <h3>Informática y mantenimiento de PC</h3>
+      </article>
+      <article class="card project reveal" data-cat="modelado">
+        <div class="project__img project__img--photo"><img src="assets/proyecto-fusion-360.jpg" width="737" height="486" loading="lazy" alt="Modelo 3D de una pieza de base cuadrada con un soporte central, visto sobre la cuadrícula del programa de diseño" style="object-position:center"></div>
+        <h3>Diseño y modelado 3D</h3>
+      </article>
+      <article class="card project reveal" data-cat="impresion">
+        <div class="project__img project__img--photo"><img src="assets/proyecto-impresion-3d.jpg" width="1100" height="825" loading="lazy" alt="Tres piezas impresas en 3D de plástico blanco sobre una mesa de madera oscura" style="object-position:center"></div>
+        <h3>Impresión 3D</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMACIÓN ============ -->
+<section id="formacion" class="sec sec--alt">
+  <div class="wrap">
+    <h2>Formación académica</h2>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="card">
+          <svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg>
+          <h3>Escuela de Educación Secundaria Técnica N.º 2 de Lanús</h3>
+          <p class="tag">7.º año · Formación técnica en curso</p>
+          <p>Áreas de trabajo: informática y hardware, redes informáticas, y diseño y fabricación digital.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="sec">
+  <div class="wrap contact">
+    <div>
+      <h2>Contacto</h2>
+      <p class="sec__intro">Si querés proponerme un proyecto, una práctica o simplemente charlar sobre tecnología, escribime.</p>
+      <ul class="links links--solo">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><a data-link="email" href="#contacto">Agregar correo electrónico</a></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-in"/></svg><a data-link="linkedin" href="#contacto" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>© <span id="year">2026</span> Andrés Pedrozo · EEST N.º 2 de Lanús</p>
+    <a href="#top">Volver arriba</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
